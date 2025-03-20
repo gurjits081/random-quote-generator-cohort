@@ -1,0 +1,235 @@
+body {
+    background-color: pink;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .quote_container {
+      font-family: "Roboto Mono", monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url(./background_img.jpg) center no-repeat;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 819px;
+      margin: 150px auto 14px;
+      height: 300px;
+      border: 3px solid #dedcda;
+      border-radius: 25px;
+    }
+    
+.quote_gen_btn {
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.quote_gen_btn:hover,
+.quote_gen_btn:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.quote_gen_btn:hover {
+  transform: translateY(-1px);
+}
+
+.quote_gen_btn:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+/* CSS */
+.copy_btn {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.copy_btn:hover,
+.copy_btn:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.copy_btn:hover {
+  transform: translateY(-1px);
+}
+
+.copy_btn:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+.btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.twitter-share-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 12px 25px;
+  color: #ddd;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(143, 142, 142, 0.15) !important;
+  background: #000000;
+}
+/* From Uiverse.io by Creatlydev */ 
+#download-btn {
+  line-height: 1;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.75em 1em;
+  padding-right: 1.25em;
+  color: #fff;
+  border: 1px solid transparent;
+  font-weight: 700;
+  border-radius: 2em;
+  font-size: 1rem;
+  box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+  transition: transform 0.3s;
+
+  background: linear-gradient(
+    90deg,
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
+}
+
+.button__icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+#download-btn:hover {
+  border-color: #f4f5f2;
+}
+
+#download-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+}
+
+
+/* Default Styles */
+#quote {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 📱 Mobile Devices - up to 768px */
+@media (max-width: 768px) {
+  #quote {
+    width: 90%; /* Responsive width */
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .quote_title {
+    font-size: 24px; /* Smaller font for title */
+  }
+
+  .quote {
+    font-size: 16px; /* Slightly smaller for mobile */
+  }
+
+  .quote_author {
+    font-size: 14px; /* Smaller font for author */
+  }
+}
+
+/* 📱 Smaller Devices - up to 480px */
+@media (max-width: 480px) {
+  #quote {
+    width: 95%; /* Almost full width on very small screens */
+    padding: 12px;
+    margin: 15px auto;
+  }
+
+  .quote_title {
+    font-size: 20px; /* Smaller title for small screens */
+  }
+
+  .quote {
+    font-size: 14px; /* Smaller quote size */
+  }
+
+  .quote_author {
+    font-size: 12px; /* Smallest size for very small devices */
+  }
+  .btn_container {
+    flex-direction: column;
+  }
+}
+
+
+
